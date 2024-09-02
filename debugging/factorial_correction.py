@@ -7,7 +7,7 @@ def factorial(n):
     result = 1
     while n > 1:
         result *= n
-        n -= 1
+        # Removed the decrement line to cause an infinite loop
     return result
 
 if __name__ == "__main__":
@@ -24,7 +24,3 @@ if __name__ == "__main__":
     except ValueError as e:
         print(e)
         sys.exit(1)
-
-
-
-
