@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-for i in range(1, len(sys.argv)):
-    print(sys.argv[i])
+# Print only the arguments, excluding the script name
+for argument in sys.argv[1:]:
+    print(argument)
     
